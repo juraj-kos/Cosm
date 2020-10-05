@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Chair Configurator</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<canvas id="renderCanvas" touch-action="none"></canvas>
+
+		<div class="container">
+			<div class="title">Cosm</div>
+			<div class="sub-title">
+				<div>Office Chair</div>
+				<div>$1735.00<span class="exp">List</span></div>
+			</div>
+			<div class="category" id="finish-style">
+				<div class="category-title">Finish Style</div>
+				<div class="item">
+					<div class="button button-selected"></div>
+					<div class="name">Cosm</div>
+					<img src="Media/FinishCosm.png" alt="" class="item-image" />
+				</div>
+				<div class="item">
+					<div class="button"></div>
+					<div class="name">Dipped-in-Color - Glacier</div>
+					<img
+						src="Media/FinishGlacier.png"
+						alt=""
+						class="item-image"
+					/>
+				</div>
+				<div class="item">
+					<div class="button"></div>
+					<div class="name">Dipped-in-Color - Nightfall</div>
+					<img
+						src="Media/FinishNightfall.png"
+						alt=""
+						class="item-image"
+					/>
+				</div>
+				<div class="item">
+					<div class="button"></div>
+					<div class="name">Dipped-in-Color - Canyon</div>
+					<img
+						src="Media/FinishCanyon.png"
+						alt=""
+						class="item-image"
+					/>
+				</div>
+			</div>
+			<div class="category" id="back-height">
+				<div class="category-title">Back Height</div>
+				<div class="item">
+					<div class="button button-selected"></div>
+					<div class="name">Low-Back Height</div>
+					<img src="Media/HeightLow.png" alt="" class="item-image" />
+				</div>
+				<div class="item">
+					<div class="button"></div>
+					<div class="name">Mid-Back Height</div>
+					<img src="Media/HeightMid.png" alt="" class="item-image" />
+				</div>
+				<div class="item">
+					<div class="button"></div>
+					<div class="name">High-Back Height</div>
+					<img src="Media/HeightHigh.png" alt="" class="item-image" />
+				</div>
+			</div>
+			<div class="category">
+				<div class="category-title">Suspension Material</div>
+				<div class="intercept">Intercept</div>
+				<div class="material-name" id="suspension-material-name">Graphite</div>
+				<div class="material-materials" id="suspension-material-images">
+					<img src="Media/84501.jpg" class="material-image image-selected"></img>
+					<img src="Media/84502.jpg" class="material-image"></img>
+					<img src="Media/84503.jpg" class="material-image"></img>
+					<img src="Media/84504.jpg" class="material-image"></img>
+					<img src="Media/84505.jpg" class="material-image"></img>
+					<img src="Media/84506.jpg" class="material-image"></img>
+				</div>
+			</div>
+			<div class="category" id="finish-style">
+				<div class="category-title">Frame and Chassis Finish</div>
+				<div class="material-name">Glacier</div>
+				<div class="material-materials">
+					<img src="Media/DB3.jpg" class="material-image image-selected"></img>
+				</div>
+			</div>
+			<div class="category" id="finish-style">
+				<div class="category-title">Base Finish</div>
+				<div class="material-name">Glacier</div>
+				<div class="material-materials">
+					<img src="Media/5Y.jpg" class="material-image"></img>
+					<img src="Media/DB3.jpg" class="material-image image-selected"></img>
+				</div>
+			</div>
+			<div class="category" id="arms-options">
+				<div class="category-title">Arms</div>
+				<div class="item">
+					<div class="button"></div>
+					<div class="name">No Arms</div>
+					<img src="Media/ArmsNo.png" alt="" class="item-image" />
+				</div>
+				<div class="item">
+					<div class="button button-selected"></div>
+					<div class="name">Fixed Arms</div>
+					<img src="Media/ArmsFixed.png" alt="" class="item-image" />
+				</div>
+				<div class="item">
+					<div class="button"></div>
+					<div class="name">Adjustable Arms</div>
+					<img src="Media/ArmsAdjustable.png" alt="" class="item-image" />
+				</div>
+			</div>
+		</div>
+
+		<script src="babylon.js"></script>
+		<script src="babylon.glTF2FileLoader.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
